@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GameConditionDef>
+	<defName>VPE_Veincaster_BloodStorm_STNL</defName>
+	<conditionClass>VPE_Veincaster.BloodTyphoon</conditionClass>
+	<label>Blood Stream</label>
+	<description>A stream of blood is falling from the sky, causing allies to regenerate blood at a faster rate.\n\nHostile creatures affected by this condition will bleed out twice as fast.</description>
+	<letterDef>NegativeEvent</letterDef>
+	<weatherDef>VPE_Veincaster_BloodStorm_STNL</weatherDef>
+	<canBePermanent>false</canBePermanent>
+</GameConditionDef>
+  
+<WeatherDef>
+	<defName>VPE_Veincaster_BloodStorm_STNL</defName>
+	<label>Blood Stream</label>
+	<description>A Veincaster has caused a mysterious stream of blood to pour down onto the area.</description>
+	<temperatureRange>-1000~9999</temperatureRange>
+	<snowRate>0</snowRate>
+	<windSpeedFactor>1</windSpeedFactor>
+	<windSpeedOffset>0</windSpeedOffset>
+	<accuracyMultiplier>1</accuracyMultiplier>
+	<favorability>Neutral</favorability>
+	<perceivePriority>1</perceivePriority>
+	<rainRate>0.5</rainRate>
+	<moveSpeedMultiplier>1</moveSpeedMultiplier>
+	<preventsShuttleLaunch MayRequire="Ludeon.Rimworld.Odyssey">false</preventsShuttleLaunch>
+	<commonalityRainfallFactor>
+		<points>
+			<li>(0, 0)</li>
+			<li>(300,0)</li>
+			<li>(1300, 0)</li>
+		</points>
+	</commonalityRainfallFactor>
+	<ambientSounds>
+		<!-- <li>Ambient_Wind_Fog</li> -->
+		<li>Ambient_Rain</li>
+	</ambientSounds>
+	<overlayClasses>
+		<li>WeatherOverlay_BloodRain</li>
+		<li>WeatherOverlay_BloodFog</li>
+		<!-- <li>WeatherOverlay_DeepBloodFog</li> -->
+	</overlayClasses>
+	<skyColorsDay>
+		<sky>(1,0.5,0.5)</sky>
+		<shadow>(0.92,0.92,0.92)</shadow>
+		<overlay>(0.5, 0.5, 0.5)</overlay>
+		<saturation>0.9</saturation>
+	</skyColorsDay>
+	<skyColorsDusk>
+		<sky>(0.8,0.3,0.3)</sky>
+		<shadow>(0.92,0.92,0.92)</shadow>
+		<overlay>(0.5, 0.5, 0.5)</overlay>
+		<saturation>0.9</saturation>
+	</skyColorsDusk>
+	<skyColorsNightEdge>
+		<sky>(0.5,0.2,0.2)</sky>
+		<shadow>(0.92,0.92,0.92)</shadow>
+		<overlay>(0.5, 0.5, 0.5)</overlay>
+		<saturation>0.9</saturation>
+	</skyColorsNightEdge>
+	<skyColorsNightMid>
+		<sky>(0.5,0.2,0.2)</sky>
+		<shadow>(0.92,0.92,0.92)</shadow>
+		<overlay>(0.5, 0.5, 0.5)</overlay>
+		<saturation>0.9</saturation>
+	</skyColorsNightMid>
+</WeatherDef>
+
+</Defs>

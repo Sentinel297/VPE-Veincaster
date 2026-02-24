@@ -1,0 +1,247 @@
+<Defs>
+
+
+
+<HediffDef>
+	<defName>VPE_BloodStabilize_STNL</defName>
+	<label>Stabilized</label>
+	<description>This creature's blood cannot leave its body as an after-effect of being stabilized.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.75, 0, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<totalBleedFactor>0</totalBleedFactor>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>12500</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+		<!-- <li Class="HediffCompProperties_Effecter"> -->
+		<!-- <stateEffecter>VPE_CarmineAspectSTNL</stateEffecter> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Bloodlink_Receiver_STNL</defName>
+	<label>Blood-Link</label>
+	<description>This person is linked to another creature, they will draw blood from this creature should they start bleeding.</description>
+	<hediffClass>VPE_Veincaster.Hediff_Bloodlink_Receiver</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.8, 0, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Bloodlink_Donor_STNL</defName>
+	<label>Blood-Link</label>
+	<description>This person is linked to another creature, they will have their blood drained in order to keep the receiver alive.</description>
+	<hediffClass>VPE_Veincaster.Hediff_Bloodlink_Donor</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.8, 0, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Bloodstream_Debuff_STNL</defName>
+	<label>Blood Stream</label>
+	<description>A psychically induced blood rain is causing this creature to bleed out faster.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.6, 0, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<totalBleedFactor>2</totalBleedFactor>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>601</disappearsAfterTicks>
+			<showRemainingTime>false</showRemainingTime>
+		</li>
+		<!-- <li Class="HediffCompProperties_Effecter"> -->
+		<!-- <stateEffecter>VPE_CarmineAspectSTNL</stateEffecter> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_BloodConvergence_Passive_STNL</defName>
+	<label>Blood Convergence</label>
+	<description>This Veincaster possesses the ability to absorb nearby blood. Doing so will restore their own blood supplies or refill the linked pawn's blood if the former isn't bleeding.</description>
+	<hediffClass>VPE_Veincaster.Hediff_BloodConvergence</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.6, 0, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<modExtensions>
+		<li Class="VPE_Veincaster.ConvergenceModExt">
+			<!-- Moved to ingame settings -->
+			<!-- <bloodRestoredBySingleFilth>0.02</bloodRestoredBySingleFilth> -->
+			<bloodAbsorptionRadius>2.9</bloodAbsorptionRadius>
+			<filthDefs>
+				<li>Filth_Blood</li>
+				<li>Filth_BloodSmear</li>
+				<li>Filth_BloodInsect</li>
+			</filthDefs>
+		</li>
+	</modExtensions>
+	<comps>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+		<!-- <disappearsAfterTicks>601</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>false</showRemainingTime> -->
+		<!-- </li> -->
+		<!-- <li Class="HediffCompProperties_Effecter"> -->
+		<!-- <stateEffecter>VPE_CarmineAspectSTNL</stateEffecter> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_LifeDrain_Passive_STNL</defName>
+	<label>Life-Drain</label>
+	<description>This Veincaster will reduce the severity of their wounds upon harming organic creatures.</description>
+	<hediffClass>VPE_Veincaster.Hediff_LifeDrain</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.8, 0, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+		<!-- <disappearsAfterTicks>601</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>false</showRemainingTime> -->
+		<!-- </li> -->
+		<!-- <li Class="HediffCompProperties_Effecter"> -->
+		<!-- <stateEffecter>VPE_CarmineAspectSTNL</stateEffecter> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_LifeHunt_STNL</defName>
+	<label>Life-Hunt</label>
+	<description>This creature's health is being drained by a Veincaster.</description>
+	<hediffClass>VPE_Veincaster.Hediff_LifeHunt</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.6, 0, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>600</disappearsAfterTicks>
+		<showRemainingTime>True</showRemainingTime>
+		</li>
+		<!-- <li Class="HediffCompProperties_Effecter"> -->
+		<!-- <stateEffecter>VPE_CarmineAspectSTNL</stateEffecter> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_SecondWind_Passive_STNL</defName>
+	<label>Second Wind (Self)</label>
+	<description>Upon death, this creature may resurrect itself once enough blood has been absorbed from nearby hemogenic things.</description>
+	<hediffClass>VPE_Veincaster.Hediff_SecondWind</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.8, 0, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<showGizmosOnCorpse>true</showGizmosOnCorpse>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+		<!-- <disappearsAfterTicks>601</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>false</showRemainingTime> -->
+		<!-- </li> -->
+		<!-- <li Class="HediffCompProperties_Effecter"> -->
+		<!-- <stateEffecter>VPE_CarmineAspectSTNL</stateEffecter> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+</Defs>

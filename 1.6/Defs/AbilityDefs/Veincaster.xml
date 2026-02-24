@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- Level 1 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_BloodLink_STNL</defName>
+	<label>Blood-Link</label>
+	<description>Links the caster to another creature capable of bleeding. Upon blood loss, the user will draw blood from the connected creature to keep themselves alive.\n\nThis ability will not draw blood from the connected creature if the severity of its blood loss exceeds the safety threshold.\n\nOnly one creature may be linked to at all times.\n\nLinking to another creature will sever the previous link.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/Bloodlink</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_BloodLink</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<castTime>30</castTime>
+	<!-- <durationTime>2500</durationTime> -->
+	<!-- <durationTimeStatFactors> -->
+		<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+	<!-- </durationTimeStatFactors> -->
+	<chance>0</chance>
+	<range>14.9</range>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetItems>true</canTargetItems>
+		<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+	</targetingParameters>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<showUndrafted>True</showUndrafted>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>1</level>
+			<order>2</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>0</entropyGain>
+			<!-- <prerequisites> -->
+			<!-- <li>VPE_ScarletPurgeSTNL</li> -->
+			<!-- </prerequisites> -->
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 2 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastGoToTargetBase">
+	<defName>VPE_BloodStabilize_STNL</defName>
+	<label>Stabilize</label>
+	<description>Stabilize the target's wounds by coagulating the caster's own blood into a protective layer around the damaged area.\n\nThe after-effects of stabilizing a target will prevent them from bleeding.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/Stabilize</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_Stabilize</abilityClass>
+	<castSound>PsycastPsychicEffect</castSound>
+	<durationTime>5000</durationTime>
+	<durationTimeStatFactors>
+		<PsychicSensitivity>1</PsychicSensitivity>
+	</durationTimeStatFactors>
+	<castTime>30</castTime>
+	<!-- <durationTime>2500</durationTime> -->
+	<!-- <durationTimeStatFactors> -->
+	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+	<!-- </durationTimeStatFactors> -->
+		<showUndrafted>True</showUndrafted>
+	<chance>0</chance>
+	<range>14.9</range>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>2</level>
+			<order>1</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodLink_STNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastGoToTargetBase">
+	<defName>VPE_BloodlightPinhole_STNL</defName>
+	<label>Bloodlight Pinhole</label>
+	<description>Weave a twisted solar-pinhole which will cause nearby pawns with the bloodlust trait to gain a mood bonus for a day.\n\nBiotech Compatibility:\nHemogenic creatures will obtain this same mood bonus.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/BloodlightPinhole</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_SpawnThingDef</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<castTime>30</castTime>
+	<chance>0</chance>
+	<range>14.9</range>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+		<showUndrafted>True</showUndrafted>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>2</level>
+			<order>2</order>
+			<psyfocusCost>0.10</psyfocusCost>
+			<entropyGain>0</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodLink_STNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VPE_Veincaster.SpawnThingAbilityDef">
+		<thingDef>VPE_Veincaster_BloodlightPinhole_STNL</thingDef>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_BloodBolt_STNL</defName>
+	<label>Blood Bolt</label>
+	<description>Form a multitude of blood bolts out of the caster's blood and shoot them at the target to dealing multiple instances of minor sharp damage.\n\nThe amount of bolts is determined by the psychic sensitivity of the user.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/BloodBolt</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_BloodBolt</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<castTime>30</castTime>
+	<!-- <chance>0</chance> -->
+	<range>14.9</range>
+	<targetMode>Thing</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>2</level>
+			<order>3</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>15</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodLink_STNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 3  -->
+	
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_BloodTransfusion_STNL</defName>
+	<label>Transfuse</label>
+	<description>Drain the first target's blood to reduce the second target's blood loss by the consumed amount.\n\nBlood-Link Synergy:\nSelecting a creature who is the receiver of a blood-link as the second target while the latter is not bleeding will transfer blood to their donor.\n\nBiotech DLC Feature:\nSelecting the same target twice will drain their blood to produce hemogen packs.\n\nSelecting a non-hostile hemogenic being will refill their blood supplies if the latter isn't bleeding.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/Transfuse</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_BloodTransfusion</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<castTime>30</castTime>
+	<!-- <durationTime>2500</durationTime> -->
+	<!-- <durationTimeStatFactors> -->
+	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+	<!-- </durationTimeStatFactors> -->
+	<!-- <chance>0</chance> -->
+	<range>14.9</range>
+	<targetMode>Pawn</targetMode>
+	<targetCount>2</targetCount>
+	<targetModes>
+		<li>Pawn</li>
+	</targetModes>
+	<targetingParametersList>
+		<li>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<!-- <canTargetItems>true</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+		</li>
+		<li>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<!-- <canTargetItems>true</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+		</li>
+	</targetingParametersList>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>3</level>
+			<order>1</order>
+			<psyfocusCost>0.15</psyfocusCost>
+			<entropyGain>35</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodStabilize_STNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastGoToTargetBase">
+	<defName>VPE_BloodConversion_STNL</defName>
+	<label>Blood Conversion</label>
+	<description>Sacrifice the caster's own blood and offer it to the nearest archotech engine, which will cause it to bestow additonal psyfocus to the user's psylink.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/Conversion</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_BloodConversion</abilityClass>
+	<castSound>VPE_Deathshield_Cast</castSound>
+	<castTime>30</castTime>
+	<!-- <chance>0</chance> -->
+	<!-- <range>14.9</range> -->
+	<targetMode>Self</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetItems>true</canTargetItems>
+		<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+	</targetingParameters>
+		<showUndrafted>True</showUndrafted>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>3</level>
+			<order>2</order>
+			<psyfocusCost>0</psyfocusCost>
+			<entropyGain>20</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodlightPinhole_STNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_BloodFlame_STNL</defName>
+	<label>Blood Flame</label>
+	<description>Alters the composition of the target's blood, resulting in a blood-like mystical fire which will exsanguinate the target by using its blood as fuel.\n\nDuration scales with psychic sensitivity.\n\nEvolutive Skill:\n\nEvolution Requirement: Caster reaches 500% psychic sensitivity.\n\nEvolution Effect: Upon death, victims of this ability will spread their flames to nearby hostile creatures who are capable of bleeding.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/BloodFlame</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_BloodFlame</abilityClass>
+	<castSound>VPE_Flameball_Cast</castSound>
+	<castTime>30</castTime>
+	<!-- <chance>0</chance> -->
+	<range>14.9</range>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>3</level>
+			<order>3</order>
+			<psyfocusCost>0.10</psyfocusCost>
+			<entropyGain>50</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodBolt_STNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 4 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_BloodConvergence_STNL</defName>
+	<label>Passive: Blood Convergence</label>
+	<description>Passive Skill: Unlocking this skill will automatically grant its effects:\n\nAllows this Veincaster to absorb blood from nearby splatters to counteract blood loss.\n\nBlood-link Synergy:\n\nWill refill the linked creature's blood if the Veincaster isn't bleeding.\n\nOnce unlocked, this passive may be toggled on/off at will.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/BloodConvergence</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_PassiveGiver</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<castTime>30</castTime>
+	<!-- <durationTime>2500</durationTime> -->
+	<!-- <durationTimeStatFactors> -->
+	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+	<!-- </durationTimeStatFactors> -->
+	<chance>0</chance>
+	<range>0</range>
+	<targetMode>Self</targetMode>
+	<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<!-- <canTargetItems>true</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>4</level>
+			<order>1</order>
+			<psyfocusCost>0</psyfocusCost>
+			<entropyGain>0</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodTransfusion_STNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VPE_Veincaster.Ability_PassiveModExt">
+		<hediffsToAdd>
+		<li>VPE_BloodConvergence_Passive_STNL</li>
+		</hediffsToAdd>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_ConcentratedAssault_STNL</defName>
+	<label>Concentrated Assault</label>
+	<description>Concentrate blood from nearby splatters and fallen enemies to strike a single target. \n\nEach blood splatter will summon blood bolts while corpses with remaining blood in them will summon heavy blood bolts.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/ConcentratedAssault</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_ConcentratedAssault</abilityClass>
+	<castSound>PsycastPsychicEffect</castSound>
+	<!-- <durationTime>600</durationTime> -->
+	<!-- <durationTimeStatFactors> -->
+		<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+	<!-- </durationTimeStatFactors> -->
+	<castTime>30</castTime>
+	<!-- <durationTime>2500</durationTime> -->
+	<!-- <durationTimeStatFactors> -->
+	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+	<!-- </durationTimeStatFactors> -->
+	<chance>0</chance>
+	<range>14.9</range>
+	<targetMode>Thing</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<radius>4.9</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>4</level>
+			<order>3</order>
+			<psyfocusCost>0.07</psyfocusCost>
+			<entropyGain>50</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodFlame_STNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VPE_Veincaster.ConcentratedAssaultModExt">
+			<bloodFilthDef>
+				<li>Filth_Blood</li>
+				<li>Filth_BloodSmear</li>
+				<li>Filth_BloodInsect</li>
+			</bloodFilthDef>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 5 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastGoToTargetBase">
+	<defName>VPE_BloodStream_STNL</defName>
+	<label>Blood Stream</label>
+	<description>Sacrifice the caster's own blood to unleash a storm of blood in the area. This storm will periodically reduce blood loss in allied creatures while causing enemy creatures to bleed out faster.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/BloodStream</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_ForceCondition</abilityClass>
+	<castSound>Psycast_Neuroquake_Effect</castSound>
+	<castTime>30</castTime>
+	<durationTime>30000</durationTime>
+	<durationTimeStatFactors>
+		<PsychicSensitivity>1</PsychicSensitivity>
+	</durationTimeStatFactors>
+	<!-- <chance>0</chance> -->
+	<!-- <range>14.9</range> -->
+	<targetMode>Self</targetMode>
+	<!-- <targetingParameters> -->
+	<!-- <canTargetLocations>false</canTargetLocations> -->
+	<!-- <canTargetSelf>false</canTargetSelf> -->
+	<!-- <canTargetAnimals>false</canTargetAnimals> -->
+	<!-- <canTargetPawns>false</canTargetPawns> -->
+	<!-- <canTargetHumans>false</canTargetHumans> -->
+	<!-- <canTargetMechs>false</canTargetMechs> -->
+	<!-- <canTargetItems>true</canTargetItems> -->
+	<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	<!-- </targetingParameters> -->
+		<showUndrafted>True</showUndrafted>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VPE_Veincaster.AbilityForceCondiExt">
+			<conditionDef>VPE_Veincaster_BloodStorm_STNL</conditionDef>
+			<global>false</global>
+		</li>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>5</level>
+			<order>1</order>
+			<psyfocusCost>0.20</psyfocusCost>
+			<entropyGain>125</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodConvergence_STNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_BloodSurface_STNL</defName>
+	<label>Blood Surface</label>
+	<description>Consume the user's own blood to coat the ground with an omnious crimson fluid. Which will deal sharp damage to factionless and hostile creatures who linger in the affected area.\n\nDuration, damage and radius scale with psychic sensitivity.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/BloodSurface</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_BloodSurface</abilityClass>
+	<castSound>VPE_PsychicGuidance_Cast</castSound>
+	<castTime>30</castTime>
+	<!-- <durationTime>2500</durationTime> -->
+	<!-- <durationTimeStatFactors> -->
+	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+	<!-- </durationTimeStatFactors> -->
+	<!-- <chance>0</chance> -->
+	<range>14.9</range>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>5</level>
+			<order>3</order>
+			<psyfocusCost>0.10</psyfocusCost>
+			<entropyGain>75</entropyGain>
+			<prerequisites>
+			<li>VPE_ConcentratedAssault_STNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 6  -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastGoToTargetBase">
+	<defName>VPE_BloodSecondWind_STNL</defName>
+	<label>Second Wind</label>
+	<description>Consume this Veincaster's blood to reform and infuse life into the body of the deceased target creature, allowing it to return from the dead after a coma.\n\nThis Veincaster may use Second Wind on themselves should they meet their demise, a large concentration of blood is required to begin the resurrection process.\n\nBlood may be resupplied through an active blood-link or by absorbing blood from adjacent items, corpses or creatures.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/SecondWind</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_SecondWind</abilityClass>
+	<castSound>MechSerumUsed</castSound>
+	<castTime>30</castTime>
+	<!-- <chance>0</chance> -->
+	<range>14.9</range>
+	<targetMode>Thing</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetItems>true</canTargetItems>
+		<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+	</targetingParameters>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>6</level>
+			<order>1</order>
+			<psyfocusCost>0.70</psyfocusCost>
+			<entropyGain>200</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodStream_STNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_LifeDrain_STNL</defName>
+	<label>Passive: Life-Drain</label>
+	<description>Passive Skill: Unlocking this skill will automatically grant its effects:\n\nAllows this Veincaster to reduce the severity of their wounds upon harming organic creatures, the healing effectiveness depends on the damage dealt.\n\nHealing Restrictions: Life-Drain cannot restore missing limbs.\n\nEvolutive Passive:\n\nEvolution Requirement: Veincaster lands the killing blow on 50 organic creatures.\n\nEvolution Effect: Life-Drain will inflict "Life-Hunt" on enemy/factionless creatures. Life-Hunt causes cutting damage over time while reducing the severity of the Veincaster's wounds. Once unlocked, Life-Hunt may be toggled at will.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/LifeDrain</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_PassiveGiver</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<castTime>30</castTime>
+	<!-- <durationTime>2500</durationTime> -->
+	<!-- <durationTimeStatFactors> -->
+	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+	<!-- </durationTimeStatFactors> -->
+	<chance>0</chance>
+	<range>0</range>
+	<targetMode>Self</targetMode>
+	<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<!-- <canTargetItems>true</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>6</level>
+			<order>3</order>
+			<psyfocusCost>0</psyfocusCost>
+			<entropyGain>0</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodSurface_STNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VPE_Veincaster.Ability_PassiveModExt">
+		<hediffsToAdd>
+		<li>VPE_LifeDrain_Passive_STNL</li>
+		</hediffsToAdd>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 7 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_BloodEvisceration_STNL</defName>
+	<label>Evisceration</label>
+	<description>Annihilate the target creature from within by accelerating its own blood flow until its body tears itself apart from the pressure, causing it to erupt into a pile of gore, scattering many of the target's organs across the ground in the process.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/Evisceration</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_Evisceration</abilityClass>
+	<castSound>VPE_PsychicGuidance_Cast</castSound>
+	<castTime>30</castTime>
+	<!-- <durationTime>2500</durationTime> -->
+	<!-- <durationTimeStatFactors> -->
+	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+	<!-- </durationTimeStatFactors> -->
+	<!-- <chance>0</chance> -->
+	<range>7.9</range>
+	<targetMode>Thing</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>True</canTargetSelf>
+		<canTargetAnimals>True</canTargetAnimals>
+		<canTargetPawns>True</canTargetPawns>
+		<canTargetHumans>True</canTargetHumans>
+		<canTargetMechs>True</canTargetMechs>
+		<canTargetItems>true</canTargetItems>
+		<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+	</targetingParameters>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>7</level>
+			<order>3</order>
+			<psyfocusCost>0.20</psyfocusCost>
+			<entropyGain>175</entropyGain>
+			<prerequisites>
+			<li>VPE_LifeDrain_STNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+</Defs>

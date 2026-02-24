@@ -1,0 +1,14 @@
+<Defs>
+  <ThoughtDef>
+    <defName>VPE_Veincaster_BloodlightPinholeThought_STNL</defName>
+    <durationDays>1</durationDays>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>bloodlight</label>
+        <description>It's beautiful...I NEED more blood.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

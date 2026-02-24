@@ -1,0 +1,119 @@
+<LanguageData>
+<VPE_Veincaster_CannotSetOnFireSingleTarget_STNL>Cannot set on fire, this creature cannot bleed.</VPE_Veincaster_CannotSetOnFireSingleTarget_STNL>
+<VPE_Veincaster_CannotBleed_STNL>This creature cannot bleed.</VPE_Veincaster_CannotBleed_STNL>
+<VPE_Veincaster_BloodlinkDonor_STNL>Receiver: {0}</VPE_Veincaster_BloodlinkDonor_STNL>
+<VPE_Veincaster_BloodlinkReceiver_STNL>Donor: {0}</VPE_Veincaster_BloodlinkReceiver_STNL>
+
+<!-- Bloodlink -->
+<VPE_Veincaster_SeverBloodlink_STNL>Sever Bloodlink</VPE_Veincaster_SeverBloodlink_STNL>
+<VPE_Veincaster_RemainingBloodInLinkedPawn_STNL>Can drain {0}% of {1}'s blood</VPE_Veincaster_RemainingBloodInLinkedPawn_STNL>
+<VPE_Veincaster_BloodlinkStatus_STNL>Blood-Link Status:</VPE_Veincaster_BloodlinkStatus_STNL>
+<VPE_Veincaster_NoBloodLink_STNL>No Blood-Link</VPE_Veincaster_NoBloodLink_STNL>
+
+<!-- Convergence -->
+<VPE_Veincaster_Convergence_Enable_STNL>Enable Convergence</VPE_Veincaster_Convergence_Enable_STNL>
+<VPE_Veincaster_Convergence_Disable_STNL>Disable Convergence</VPE_Veincaster_Convergence_Disable_STNL>
+<VPE_Veincaster_Convergence_Active_STNL>Active</VPE_Veincaster_Convergence_Active_STNL>
+<VPE_Veincaster_Convergence_Inactive_STNL>Inactive</VPE_Veincaster_Convergence_Inactive_STNL>
+
+<!-- Blood Flame -->
+<VPE_Veincaster_BloodFlame_Info_STNL>Duration: {0}s</VPE_Veincaster_BloodFlame_Info_STNL>
+
+<!-- Blood Surface -->
+<VPE_Veincaster_BloodSurface_Info_STNL>Duration: {0}s\nDamage: {1} Cutting</VPE_Veincaster_BloodSurface_Info_STNL>
+
+<!-- Life Hunt -->
+<VPE_Veincaster_LifeHunt_ToggleOn_STNL>Enable Life-Hunt</VPE_Veincaster_LifeHunt_ToggleOn_STNL>
+<VPE_Veincaster_LifeHunt_ToggleOff_STNL>Disable Life-Hunt</VPE_Veincaster_LifeHunt_ToggleOff_STNL>
+<VPE_Veincaster_LifeHunt_KillCounter_STNL>{0}/{1} Kills</VPE_Veincaster_LifeHunt_KillCounter_STNL>
+<VPE_Veincaster_LifeHunt_Instigator_STNL>Instigator: {0},</VPE_Veincaster_LifeHunt_Instigator_STNL>
+
+<!-- Second Wind -->
+<VPE_Veincaster_SecondWind_DiedWithNoLink_STNL>{0} has died without a blood-link {1} will resurrect after draining blood from nearby items, corpses or creatures.</VPE_Veincaster_SecondWind_DiedWithNoLink_STNL>
+<VPE_Veincaster_SecondWind_DiedWithLink_STNL>{0} has died with a blood-link, {1} will supply blood for {0} to assist {2} resurrection. (Blood can only be supplied while the donor isn't bleeding.)</VPE_Veincaster_SecondWind_DiedWithLink_STNL>
+<VPE_Veincaster_SecondWind_DiedWithLinkButDonorDead_STNL>{0} has died with a blood-link, however, {1} was dead. {0} won't passively regenerate blood while {1} remains dead.</VPE_Veincaster_SecondWind_DiedWithLinkButDonorDead_STNL>
+<VPE_Veincaster_SecondWind_ResurrectionAvailable_STNL>{0} now has restored enough blood to resurrect.</VPE_Veincaster_SecondWind_ResurrectionAvailable_STNL>
+<VPE_Veincaster_SecondWind_Resurrection_STNL>Resurrect {0}L/{1}L</VPE_Veincaster_SecondWind_Resurrection_STNL>
+<VPE_Veincaster_SecondWind_Resurrection_Description_STNL>Drain blood from nearby hemogenic items, corpses or creatures. The selection order goes as such Items>Corpses>Pawns.</VPE_Veincaster_SecondWind_Resurrection_Description_STNL>
+
+<!-- Ability mouse tip -->
+<VPE_Veincaster_TargetOneBloodLevel_STNL>{0} has {1}% of available blood</VPE_Veincaster_TargetOneBloodLevel_STNL>
+<VPE_Veincaster_NoFirstTarget_STNL>No target</VPE_Veincaster_NoFirstTarget_STNL>
+<VPE_Veincaster_AbilityDrainBlood_Tip_STNL>{0} will drain {1}% blood from {2}.</VPE_Veincaster_AbilityDrainBlood_Tip_STNL>
+<VPE_Veincaster_AbilityStabilize_Tip_STNL>{0} will drain {1}% blood from {2} per untended wounds in the target.</VPE_Veincaster_AbilityStabilize_Tip_STNL>
+<VPE_Veincaster_BloodBolt_BoltCount_STNL>Ready to fire {0} bolt(s).</VPE_Veincaster_BloodBolt_BoltCount_STNL>
+
+<!-- Misc -->
+<VPE_Veincaster_NotAPawn_STNL>This target isn't a creature.</VPE_Veincaster_NotAPawn_STNL>
+<VPE_Veincaster_NotACorpse_STNL>Must target a corpse.</VPE_Veincaster_NotACorpse_STNL>
+<VPE_Veincaster_DestroyParent_STNL>Destroy {0}.</VPE_Veincaster_DestroyParent_STNL>
+
+<!-- Settings -->
+
+<!-- Reset -->
+<VPE_Veincaster_ResetSettings_STNL>Reset</VPE_Veincaster_ResetSettings_STNL>
+
+<!-- Blood Bolt -->
+<VPE_Veincaster_Settings_BloodBolt_STNL>Blood bolt:</VPE_Veincaster_Settings_BloodBolt_STNL>
+<VPE_Veincaster_Settings_BloodBolt_PctPerBolt_STNL>Psychic sensitivity percent per bolt: {0}%</VPE_Veincaster_Settings_BloodBolt_PctPerBolt_STNL>
+<VPE_Veincaster_Settings_BloodBolt_MaxBolts_STNL>Max bolt per cast: {0}</VPE_Veincaster_Settings_BloodBolt_MaxBolts_STNL>
+<VPE_Veincaster_Settings_BloodBolt_BloodDrain_STNL>Blood drain per cast: {0}%</VPE_Veincaster_Settings_BloodBolt_BloodDrain_STNL>
+
+<!-- Stabilize -->
+<VPE_Veincaster_Settings_Stabilize_STNL>Stabilize:</VPE_Veincaster_Settings_Stabilize_STNL>
+<VPE_Veincaster_Settings_Stabilize_BloodDrain_STNL>Blood drain per tended wound: {0}</VPE_Veincaster_Settings_Stabilize_BloodDrain_STNL>
+<VPE_Veincaster_Settings_Stabilize_SafetyThreshold_STNL>Stabilize stops if blood loss would exceed: {0}% (0% to disable.)</VPE_Veincaster_Settings_Stabilize_SafetyThreshold_STNL>
+
+<!-- Bloodlink -->
+<VPE_Veincaster_Settings_Bloodlink_STNL>Blood-Link:</VPE_Veincaster_Settings_Bloodlink_STNL>
+<VPE_Veincaster_Settings_Bloodlink_SafetyDrain_STNL>Blood-Link won't drain from the donor if blood loss exceeds: {0}%</VPE_Veincaster_Settings_Bloodlink_SafetyDrain_STNL>
+
+<!-- Transfuse -->
+<VPE_Veincaster_Settings_Transfuse_STNL>Transfuse:</VPE_Veincaster_Settings_Transfuse_STNL>
+<VPE_Veincaster_Settings_Transfuse_DrainCap_STNL>Maximum blood drain: {0}%</VPE_Veincaster_Settings_Transfuse_DrainCap_STNL>
+<VPE_Veincaster_Settings_Transfuse_BloodPacksDivisionFac_STNL>Division factor for the amount of blood packs: {0}</VPE_Veincaster_Settings_Transfuse_BloodPacksDivisionFac_STNL>
+
+<!-- BloodFlame -->
+<VPE_Veincaster_Settings_Bloodflame_STNL>Blood Flame:</VPE_Veincaster_Settings_Bloodflame_STNL>
+<VPE_Veincaster_Settings_Bloodflame_BloodDrain_STNL>Blood loss per ticking (every 3 sec): {0}%</VPE_Veincaster_Settings_Bloodflame_BloodDrain_STNL>
+<VPE_Veincaster_Settings_Bloodflame_BaseDuration_STNL>Base duration: {0}s</VPE_Veincaster_Settings_Bloodflame_BaseDuration_STNL>
+<VPE_Veincaster_Settings_Bloodflame_EvolutionThreshold_STNL>Psychic sensitivity required to evolve ability (0% to disable evolution): {0}%</VPE_Veincaster_Settings_Bloodflame_EvolutionThreshold_STNL>
+<!-- Blood Surface -->
+<VPE_Veincaster_Settings_BloodSurface_STNL>Blood Surface:</VPE_Veincaster_Settings_BloodSurface_STNL>
+<VPE_Veincaster_Settings_BloodSurface_BloodDrain_STNL>Blood drain per cast: {0}%</VPE_Veincaster_Settings_BloodSurface_BloodDrain_STNL>
+<VPE_Veincaster_Settings_BloodSurface_BaseDuration_STNL>Base Duration: {0}s</VPE_Veincaster_Settings_BloodSurface_BaseDuration_STNL>
+<VPE_Veincaster_Settings_BloodSurface_BaseDamage_STNL>Base damage: {0} cutting damage</VPE_Veincaster_Settings_BloodSurface_BaseDamage_STNL>
+<VPE_Veincaster_Settings_BloodSurface_SensiScaling_STNL>Modifier that affects the effectiveness of the psychic sensitivity scaling (0x = no scaling): {0}x</VPE_Veincaster_Settings_BloodSurface_SensiScaling_STNL>
+
+<!-- Blood Convergence -->
+<VPE_Veincaster_Settings_BloodConvergence_STNL>Blood Convergence:</VPE_Veincaster_Settings_BloodConvergence_STNL>
+<VPE_Veincaster_Settings_BloodConvergence_Refill_STNL>Blood restored by blood filth: {0}%</VPE_Veincaster_Settings_BloodConvergence_Refill_STNL>
+
+<!-- Blood Stream -->
+<VPE_Veincaster_Settings_BloodStream_STNL>Blood Stream:</VPE_Veincaster_Settings_BloodStream_STNL>
+<VPE_Veincaster_Settings_BloodStream_BloodDrain_STNL>Blood drain per cast: {0}%</VPE_Veincaster_Settings_BloodStream_BloodDrain_STNL>
+<VPE_Veincaster_Settings_BloodStream_BloodRefill_STNL>Blood restoration per ticking (10 sec): {0}%</VPE_Veincaster_Settings_BloodStream_BloodRefill_STNL>
+
+<!-- Second Wind -->
+<VPE_Veincaster_Settings_SecondWind_STNL>Second Wind:</VPE_Veincaster_Settings_SecondWind_STNL>
+<VPE_Veincaster_Settings_SecondWind_BloodDrain_STNL>Blood drain per cast: {0}%</VPE_Veincaster_Settings_SecondWind_BloodDrain_STNL>
+<VPE_Veincaster_Settings_SecondWind_ComaDurationDays_STNL>Coma duration: {0} day(s)</VPE_Veincaster_Settings_SecondWind_ComaDurationDays_STNL>
+
+<!-- Blood Conversion -->
+<VPE_Veincaster_Settings_BloodConversion_STNL>Blood Conversion:</VPE_Veincaster_Settings_BloodConversion_STNL>
+<VPE_Veincaster_Settings_BloodConversion_BloodDrain_STNL>Blood drain per cast: {0}%</VPE_Veincaster_Settings_BloodConversion_BloodDrain_STNL>
+<VPE_Veincaster_Settings_BloodConversion_FocusGain_STNL>Focus gain per cast: {0}%</VPE_Veincaster_Settings_BloodConversion_FocusGain_STNL>
+
+<!-- Life Drain -->
+<VPE_Veincaster_Settings_LifeDrain_STNL>Life Drain:</VPE_Veincaster_Settings_LifeDrain_STNL>
+<VPE_Veincaster_Settings_LifeDrain_HealingPerHitPCT_STNL>Healing value will equal to {0}% of inflicted damage.</VPE_Veincaster_Settings_LifeDrain_HealingPerHitPCT_STNL>
+<VPE_Veincaster_Settings_LifeHunt_UnlockReq_STNL>Life-Hunt kill requirement: {0} Kill(s)</VPE_Veincaster_Settings_LifeHunt_UnlockReq_STNL>
+<VPE_Veincaster_Settings_LifeHunt_Duration_STNL>Life-Hunt duration: {0}s</VPE_Veincaster_Settings_LifeHunt_Duration_STNL>
+<VPE_Veincaster_Settings_LifeHunt_PreservedDamagePCT_STNL>Life-Hunt will deal {0}% of the original damage per second.</VPE_Veincaster_Settings_LifeHunt_PreservedDamagePCT_STNL>
+<VPE_Veincaster_Settings_LifeHunt_HealingPerHitPCT_STNL>Life-Hunt will heal the instigator by {0}% of the damage dealt.</VPE_Veincaster_Settings_LifeHunt_HealingPerHitPCT_STNL>
+
+<!-- Evisceration -->
+<VPE_Veincaster_Settings_Evisceration_STNL>Evisceration:</VPE_Veincaster_Settings_Evisceration_STNL>
+<VPE_Veincaster_Settings_Evisceration_DestroyCorpse_STNL>Should this ability destroy corpses?</VPE_Veincaster_Settings_Evisceration_DestroyCorpse_STNL>
+<VPE_Veincaster_Settings_Evisceration_ObtentionChance_STNL>Chance for a destroyed part to drop its item: {0}%</VPE_Veincaster_Settings_Evisceration_ObtentionChance_STNL>
+</LanguageData>

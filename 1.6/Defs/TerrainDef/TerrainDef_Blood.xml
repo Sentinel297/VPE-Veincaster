@@ -1,0 +1,62 @@
+<Defs>
+  <TerrainDef Abstract="True" Name="VPE_VeincasterBloodTerrain_Base_STNL">
+    <edgeType>Water</edgeType>
+    <fertility>0</fertility>
+    <natural>false</natural>
+    <avoidWander>true</avoidWander>
+    <holdSnowOrSand>false</holdSnowOrSand>
+    <takeSplashes>true</takeSplashes>
+    <extinguishesFire>true</extinguishesFire>
+    <extraDeteriorationFactor>3</extraDeteriorationFactor>
+    <!-- <traversedThought>SoakingWet</traversedThought> -->
+    <extraNonDraftedPerceivedPathCost>180</extraNonDraftedPerceivedPathCost>
+    <extraDraftedPerceivedPathCost>18</extraDraftedPerceivedPathCost>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/MarshPollutionOverlay</pollutionOverlayTexturePath>
+    <canFreeze>false</canFreeze>
+    <waterBodyType>Freshwater</waterBodyType>
+    <floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">ShallowFloodwater</floodTerrain>
+    <filthAcceptanceMask>
+      <li>None</li>
+    </filthAcceptanceMask>
+    <tags>
+      <li>BloodPuddle</li>
+    </tags>
+    <!-- <tools> -->
+      <!-- <li> -->
+        <!-- <label>water</label> -->
+        <!-- <capacities> -->
+          <!-- <li>KickMaterialInEyes</li> -->
+        <!-- </capacities> -->
+        <!-- <hediff>WaterInEyes</hediff> -->
+        <!-- <cooldownTime>1.5</cooldownTime> -->
+      <!-- </li> -->
+    <!-- </tools> -->
+  </TerrainDef>
+  
+    <TerrainDef Abstract="True" Name="VPE_VeincasterBloodShallowBase_STNL" ParentName="VPE_VeincasterBloodTerrain_Base_STNL">
+    <pathCost>30</pathCost>
+    <waterBodyType>Freshwater</waterBodyType>
+    <affordances>
+      <!-- <li>ShallowWater</li> -->
+      <!-- <li>WaterproofConduitable</li> -->
+      <li>Bridgeable</li>
+      <li>Walkable</li>
+    </affordances>
+  </TerrainDef>
+  
+    <TerrainDef ParentName="VPE_VeincasterBloodShallowBase_STNL">
+    <defName>VPE_BloodTerrainShallow_STNL</defName>
+    <label>shallow blood puddle</label>
+    <texturePath>Terrain/Surfaces/WaterShallowRamp</texturePath>
+    <pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <renderPrecedence>394</renderPrecedence>
+	<color>(255,140,140)</color>
+    <!-- <driesTo>Gravel</driesTo> -->
+    <tags>
+      <!-- <li>WaterFreshShallow</li> -->
+      <!-- <li>WaterFreshShallowStill</li> -->
+    </tags>
+  </TerrainDef>
+</Defs>

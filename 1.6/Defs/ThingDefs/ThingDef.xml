@@ -1,0 +1,123 @@
+<Defs>
+
+  <ThingDef>
+    <defName>VPE_BloodFlameThing_STNL</defName>
+    <label>Blood Fire</label>
+    <thingClass>VPE_Veincaster.BloodFire</thingClass>
+    <category>Attachment</category>
+    <tickerType>Normal</tickerType>
+    <pathfinderDangerous>true</pathfinderDangerous>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <canInteractThroughCorners>true</canInteractThroughCorners>
+    <graphicData>
+      <texPath>Things/Special/Redlight</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData> 
+    <altitudeLayer>PawnState</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(460, 220, 205, 0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="EtherealThingBase">
+	<defName>VPE_Veincaster_BloodlightPinhole_STNL</defName>
+	<label>Bloodlight Pinhole</label>
+	<thingClass>VPE_Veincaster.BloodlightPinhole</thingClass>
+	<tickerType>Normal</tickerType>
+	<drawerType>RealtimeOnly</drawerType>
+	<drawOffscreen>true</drawOffscreen>
+	<category>PsychicEmitter</category>
+	<altitudeLayer>MoteOverheadLow</altitudeLayer>
+	<selectable>true</selectable>
+	<building>
+		<isInert>true</isInert>
+		<claimable>true</claimable>
+		<deconstructible>false</deconstructible>
+	</building>
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Mote/SolarPinhole</texPath>
+		<shaderType>MoteGlowDistorted</shaderType>
+		<color>(255, 100, 100)</color>
+		<drawSize>2</drawSize>
+		<shaderParameters>
+			<_DistortionTex>/Other/Ripples</_DistortionTex>
+			<_distortionIntensity>0.05</_distortionIntensity>
+			<_DistortionScale>0.8</_DistortionScale>
+			<_distortionScrollSpeed>(0.07, 0.07, 0.0)</_distortionScrollSpeed>
+		</shaderParameters>
+	</graphicData>
+	<modExtensions>
+		<li Class="VPE_Veincaster.BloodlightPinholeModExt">
+			<traitDefsForBuff>
+				<li>Bloodlust</li>
+			</traitDefsForBuff>
+		</li>
+	</modExtensions>
+	<comps>
+		<li Class="CompProperties_Glower">
+			<glowRadius>8.9</glowRadius>
+			<overlightRadius>0</overlightRadius>
+			<glowColor>(460, 220, 205, 0)</glowColor>
+		</li>
+		<li Class="CompProperties_HeatPusher">
+			<compClass>CompHeatPusherPowered</compClass>
+			<heatPerSecond>5.5</heatPerSecond>
+			<heatPushMaxTemperature>30</heatPushMaxTemperature>
+		</li>
+		<li Class="VPE_Veincaster.ThingCompProps_DestroyGizmo"/>
+	</comps>
+</ThingDef>
+
+  <DamageDef>
+    <defName>VPE_Veincaster_BloodBolt_STNL</defName>
+    <label>blood bolt</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Cut</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>VPE_Veincaster_BloodBolt_STNL</defName>
+    <label>blood bolt</label>
+    <graphicData>
+      <texPath>UI_Veincaster_STNL/Projectiles/BloodBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>VPE_Veincaster_BloodBolt_STNL</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseBullet">
+    <defName>VPE_Veincaster_HeavyBloodBolt_STNL</defName>
+    <label>heavy blood bolt</label>
+    <graphicData>
+      <texPath>UI_Veincaster_STNL/Projectiles/HeavyBloodBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>VPE_Veincaster_BloodBolt_STNL</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>20</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>
