@@ -278,7 +278,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_BloodFlame_STNL</defName>
 	<label>Blood Flame</label>
-	<description>Alters the composition of the target's blood, resulting in a blood-like mystical fire which will exsanguinate the target by using its blood as fuel.\n\nDuration scales with psychic sensitivity.\n\nEvolutive Skill:\n\nEvolution Requirement: Caster reaches 500% psychic sensitivity.\n\nEvolution Effect: Upon death, victims of this ability will spread their flames to nearby hostile creatures who are capable of bleeding.</description>
+	<description>Alters the composition of the target's blood, resulting in a blood-like mystical fire which will exsanguinate the target by using its blood as fuel.\n\nDuration scales with psychic sensitivity.\n\nEvolutive Skill:\n\nEvolution Requirement: Caster reaches 500% psychic sensitivity.\n\nEvolution Effect: Upon death, victims of this ability will spread their flames to nearby hostile creatures who are capable of bleeding.\n\nConcentration Skill: Dying while this skill is active will end it prematurely.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/BloodFlame</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_BloodFlame</abilityClass>
 	<castSound>VPE_Flameball_Cast</castSound>
@@ -468,7 +468,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_BloodSurface_STNL</defName>
 	<label>Blood Surface</label>
-	<description>Consume the user's own blood to coat the ground with an omnious crimson fluid. Which will deal sharp damage to factionless and hostile creatures who linger in the affected area.\n\nDuration, damage and radius scale with psychic sensitivity.\n\nDying while surfaces are present will end them prematurely.</description>
+	<description>Consume the user's own blood to coat the ground with an omnious crimson fluid. Which will deal sharp damage to factionless and hostile creatures who linger in the affected area.\n\nDuration, damage and radius scale with psychic sensitivity.\n\nConcentration Skill: Dying while this skill is active will end it prematurely.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/BloodSurface</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_BloodSurface</abilityClass>
 	<castSound>VPE_PsychicGuidance_Cast</castSound>

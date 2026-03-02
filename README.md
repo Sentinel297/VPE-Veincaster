@@ -77,6 +77,7 @@ Sacrifice the caster's own blood to unleash a blood storm in the area. This stor
 <h2>Blood Surface</h2>
 Consume the user's own blood to coat the ground with an omnious crimson fluid. Which will deal sharp damage to factionless and hostile creatures who linger in the affected area.
 Duration, damage and radius scale with psychic sensitivity.
+Dying while surfaces are present will end them prematurely.
 
 <h1>T6</h1>
 
