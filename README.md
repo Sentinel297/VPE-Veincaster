@@ -51,6 +51,7 @@ Duration scales with psychic sensitivity.
 Evolutive Skill:
 Evolution Requirement: Caster reaches 500% psychic sensitivity.
 Evolution Effect: Upon death, victims of this ability will spread their flames to nearby hostile creatures who are capable of bleeding.
+Concentration Skill: Dying while this skill is active will end it prematurely.
 
 <h1>T4</h1>
 
@@ -65,8 +66,7 @@ Once unlocked, this passive may be toggled on/off at will.
 
 <h2>Concentrated Assault</h2>
 Concentrate blood from nearby splatters and fallen enemies to strike a single target. 
-
-Each blood splatter will summon blood bolts while corpses with remaining blood in them will summon heavy blood bolts.
+Each blood splatter will summon blood bolts while corpses who aren't out of blood will summon heavy blood bolts.
 
 <h1>T5</h1>
 

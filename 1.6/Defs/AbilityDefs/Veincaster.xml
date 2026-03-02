@@ -366,7 +366,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_ConcentratedAssault_STNL</defName>
 	<label>Concentrated Assault</label>
-	<description>Concentrate blood from nearby splatters and fallen enemies to strike a single target. \n\nEach blood splatter will summon blood bolts while corpses with remaining blood in them will summon heavy blood bolts.</description>
+	<description>Concentrate blood from nearby splatters and fallen enemies to strike a single target. \n\nEach blood splatter will summon blood bolts while corpses who aren't out of blood will summon heavy blood bolts.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/ConcentratedAssault</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_ConcentratedAssault</abilityClass>
 	<castSound>PsycastPsychicEffect</castSound>
