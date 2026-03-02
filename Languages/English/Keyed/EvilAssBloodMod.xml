@@ -83,6 +83,7 @@
 <VPE_Veincaster_Settings_BloodSurface_BloodDrain_STNL>Blood drain per cast: {0}%</VPE_Veincaster_Settings_BloodSurface_BloodDrain_STNL>
 <VPE_Veincaster_Settings_BloodSurface_BaseDuration_STNL>Base Duration: {0}s</VPE_Veincaster_Settings_BloodSurface_BaseDuration_STNL>
 <VPE_Veincaster_Settings_BloodSurface_BaseDamage_STNL>Base damage: {0} cutting damage</VPE_Veincaster_Settings_BloodSurface_BaseDamage_STNL>
+<VPE_Veincaster_Settings_BloodSurface_DamageCap_STNL>Maximum Damage: {0} cutting damage</VPE_Veincaster_Settings_BloodSurface_DamageCap_STNL>
 <VPE_Veincaster_Settings_BloodSurface_SensiScaling_STNL>Modifier that affects the effectiveness of the psychic sensitivity scaling (0x = no scaling): {0}x</VPE_Veincaster_Settings_BloodSurface_SensiScaling_STNL>
 
 <!-- Blood Convergence -->

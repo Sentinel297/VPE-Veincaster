@@ -105,7 +105,7 @@ Evolution Effect: Life-Drain will inflict "Life-Hunt" on enemy/factionless creat
 
 Annihilate the target creature from within by accelerating its own blood flow until its body tears itself apart from the pressure, causing it to erupt into a pile of gore, scattering many of the target's organs across the ground in the process.
 
-<h1>Disclaimer:While Anomaly isn't a dependency some of its VFX are used in this mod, meaning that some abilities won't look as intended without it.</h1>
+<h1>Disclaimer: While Anomaly isn't a dependency some of its VFX are used in this mod, meaning that some abilities won't look as intended without it.</h1>
 
 <h1>F.A.Q</h1>
 

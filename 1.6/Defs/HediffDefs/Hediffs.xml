@@ -136,11 +136,11 @@
 			<!-- Moved to ingame settings -->
 			<!-- <bloodRestoredBySingleFilth>0.02</bloodRestoredBySingleFilth> -->
 			<bloodAbsorptionRadius>2.9</bloodAbsorptionRadius>
-			<filthDefs>
-				<li>Filth_Blood</li>
-				<li>Filth_BloodSmear</li>
-				<li>Filth_BloodInsect</li>
-			</filthDefs>
+			<!-- <filthDefs> -->
+				<!-- <li>Filth_Blood</li> -->
+				<!-- <li>Filth_BloodSmear</li> -->
+				<!-- <li>Filth_BloodInsect</li> -->
+			<!-- </filthDefs> -->
 		</li>
 	</modExtensions>
 	<comps>
@@ -232,6 +232,38 @@
 	<showGizmosOnCorpse>true</showGizmosOnCorpse>
 	<stages>
 		<li>
+		</li>
+	</stages>
+	<comps>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+		<!-- <disappearsAfterTicks>601</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>false</showRemainingTime> -->
+		<!-- </li> -->
+		<!-- <li Class="HediffCompProperties_Effecter"> -->
+		<!-- <stateEffecter>VPE_CarmineAspectSTNL</stateEffecter> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_BloodSurfaceHiddenHediff_STNL</defName>
+	<label>Blood Surface Control Hediff</label>
+	<description>Hidden hediff to remove blood surfaces upon death.</description>
+	<hediffClass>VPE_Veincaster.Hediff_HediffBloodSurfaceController</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.8, 0, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<!-- <showGizmosOnCorpse>true</showGizmosOnCorpse> -->
+	<stages>
+		<li>
+		<becomeVisible>false</becomeVisible>
 		</li>
 	</stages>
 	<comps>

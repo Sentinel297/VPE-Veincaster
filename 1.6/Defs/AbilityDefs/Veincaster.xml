@@ -468,7 +468,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_BloodSurface_STNL</defName>
 	<label>Blood Surface</label>
-	<description>Consume the user's own blood to coat the ground with an omnious crimson fluid. Which will deal sharp damage to factionless and hostile creatures who linger in the affected area.\n\nDuration, damage and radius scale with psychic sensitivity.</description>
+	<description>Consume the user's own blood to coat the ground with an omnious crimson fluid. Which will deal sharp damage to factionless and hostile creatures who linger in the affected area.\n\nDuration, damage and radius scale with psychic sensitivity.\n\nDying while surfaces are present will end them prematurely.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/BloodSurface</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_BloodSurface</abilityClass>
 	<castSound>VPE_PsychicGuidance_Cast</castSound>
