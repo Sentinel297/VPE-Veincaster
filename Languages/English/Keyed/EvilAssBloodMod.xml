@@ -37,6 +37,7 @@
 <VPE_Veincaster_SecondWind_Resurrection_Description_STNL>Drain blood from nearby hemogenic items, corpses or creatures. The selection order goes as such Items>Corpses>Pawns.</VPE_Veincaster_SecondWind_Resurrection_Description_STNL>
 
 <!-- Ability mouse tip -->
+<VPE_Veincaster_RemainingBloodInCasterPawn_STNL>{0}% remaining blood in {1}.</VPE_Veincaster_RemainingBloodInCasterPawn_STNL>
 <VPE_Veincaster_TargetOneBloodLevel_STNL>{0} has {1}% of available blood for transfusion.</VPE_Veincaster_TargetOneBloodLevel_STNL>
 <VPE_Veincaster_TargetOneBloodLevelForPacks_STNL>{0} has {1}% of available blood to summon blood packs.</VPE_Veincaster_TargetOneBloodLevelForPacks_STNL>
 <VPE_Veincaster_BloodPerPackRatio_STNL>{0}% = 1 pack.</VPE_Veincaster_BloodPerPackRatio_STNL>
