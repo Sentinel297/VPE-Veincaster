@@ -517,7 +517,7 @@
 	<abilityClass>VPE_Veincaster.Ability_SecondWind</abilityClass>
 	<castSound>MechSerumUsed</castSound>
 	<castTime>30</castTime>
-	<!-- <chance>0</chance> -->
+	<chance>0</chance>
 	<range>14.9</range>
 	<targetMode>Thing</targetMode>
 	<targetingParameters>
@@ -604,7 +604,7 @@
 	<iconPath>UI_Veincaster_STNL/Abilities/Evisceration</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_Evisceration</abilityClass>
 	<castSound>VPE_PsychicGuidance_Cast</castSound>
-	<castTime>30</castTime>
+	<castTime>90</castTime>
 	<!-- <durationTime>2500</durationTime> -->
 	<!-- <durationTimeStatFactors> -->
 	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->

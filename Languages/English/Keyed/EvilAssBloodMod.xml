@@ -30,15 +30,17 @@
 
 <!-- Second Wind -->
 <VPE_Veincaster_SecondWind_DiedWithNoLink_STNL>{0} has died without a blood-link {1} will resurrect after draining blood from nearby items, corpses or creatures.</VPE_Veincaster_SecondWind_DiedWithNoLink_STNL>
-<VPE_Veincaster_SecondWind_DiedWithLink_STNL>{0} has died with a blood-link, {1} will supply blood for {0} to assist {2} resurrection. (Blood can only be supplied while the donor isn't bleeding.)</VPE_Veincaster_SecondWind_DiedWithLink_STNL>
+<VPE_Veincaster_SecondWind_DiedWithLink_STNL>{0} has died with a blood-link, {1} will supply blood for {0} to assist {2} resurrection. (Blood may only be supplied while the donor isn't bleeding.)</VPE_Veincaster_SecondWind_DiedWithLink_STNL>
 <VPE_Veincaster_SecondWind_DiedWithLinkButDonorDead_STNL>{0} has died with a blood-link, however, {1} was dead. {0} won't passively regenerate blood while {1} remains dead.</VPE_Veincaster_SecondWind_DiedWithLinkButDonorDead_STNL>
 <VPE_Veincaster_SecondWind_ResurrectionAvailable_STNL>{0} now has restored enough blood to resurrect.</VPE_Veincaster_SecondWind_ResurrectionAvailable_STNL>
 <VPE_Veincaster_SecondWind_Resurrection_STNL>Resurrect {0}L/{1}L</VPE_Veincaster_SecondWind_Resurrection_STNL>
 <VPE_Veincaster_SecondWind_Resurrection_Description_STNL>Drain blood from nearby hemogenic items, corpses or creatures. The selection order goes as such Items>Corpses>Pawns.</VPE_Veincaster_SecondWind_Resurrection_Description_STNL>
 
 <!-- Ability mouse tip -->
-<VPE_Veincaster_TargetOneBloodLevel_STNL>{0} has {1}% of available blood</VPE_Veincaster_TargetOneBloodLevel_STNL>
-<VPE_Veincaster_NoFirstTarget_STNL>No target</VPE_Veincaster_NoFirstTarget_STNL>
+<VPE_Veincaster_TargetOneBloodLevel_STNL>{0} has {1}% of available blood for transfusion.</VPE_Veincaster_TargetOneBloodLevel_STNL>
+<VPE_Veincaster_TargetOneBloodLevelForPacks_STNL>{0} has {1}% of available blood to summon blood packs.</VPE_Veincaster_TargetOneBloodLevelForPacks_STNL>
+<VPE_Veincaster_BloodPerPackRatio_STNL>{0}% = 1 pack.</VPE_Veincaster_BloodPerPackRatio_STNL>
+<VPE_Veincaster_NoFirstTarget_STNL>No target.</VPE_Veincaster_NoFirstTarget_STNL>
 <VPE_Veincaster_AbilityDrainBlood_Tip_STNL>{0} will drain {1}% blood from {2}.</VPE_Veincaster_AbilityDrainBlood_Tip_STNL>
 <VPE_Veincaster_AbilityStabilize_Tip_STNL>{0} will drain {1}% blood from {2} per untended wounds in the target.</VPE_Veincaster_AbilityStabilize_Tip_STNL>
 <VPE_Veincaster_BloodBolt_BoltCount_STNL>Ready to fire {0} bolt(s).</VPE_Veincaster_BloodBolt_BoltCount_STNL>
@@ -71,7 +73,8 @@
 <!-- Transfuse -->
 <VPE_Veincaster_Settings_Transfuse_STNL>Transfuse:</VPE_Veincaster_Settings_Transfuse_STNL>
 <VPE_Veincaster_Settings_Transfuse_DrainCap_STNL>Maximum blood drain: {0}%</VPE_Veincaster_Settings_Transfuse_DrainCap_STNL>
-<VPE_Veincaster_Settings_Transfuse_BloodPacksDivisionFac_STNL>Division factor for the amount of blood packs: {0}</VPE_Veincaster_Settings_Transfuse_BloodPacksDivisionFac_STNL>
+<VPE_Veincaster_Settings_Transfuse_DrainCapForPacks_STNL>Maximum blood drain used when summoning blood packs: {0}%</VPE_Veincaster_Settings_Transfuse_DrainCapForPacks_STNL>
+<VPE_Veincaster_Settings_Transfuse_BloodPacksPCTPerPack_STNL>Percent required to summon a blood pack: {0}%</VPE_Veincaster_Settings_Transfuse_BloodPacksPCTPerPack_STNL>
 
 <!-- BloodFlame -->
 <VPE_Veincaster_Settings_Bloodflame_STNL>Blood Flame:</VPE_Veincaster_Settings_Bloodflame_STNL>
