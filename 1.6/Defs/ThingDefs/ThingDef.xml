@@ -100,6 +100,7 @@
     <projectile>
       <damageDef>VPE_Veincaster_BloodBolt_STNL</damageDef>
       <damageAmountBase>3</damageAmountBase>
+	   <armorPenetrationBase>0.4</armorPenetrationBase>
       <speed>45</speed>
     </projectile>
   </ThingDef>
@@ -116,6 +117,7 @@
     <projectile>
       <damageDef>VPE_Veincaster_BloodBolt_STNL</damageDef>
       <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>1.50</armorPenetrationBase>
       <speed>20</speed>
     </projectile>
   </ThingDef>

@@ -145,7 +145,7 @@
 	<castSound>PsycastPsychicPulse</castSound>
 	<castTime>30</castTime>
 	<!-- <chance>0</chance> -->
-	<range>14.9</range>
+	<range>19.9</range>
 	<targetMode>Thing</targetMode>
 	<targetingParameters>
 		<canTargetLocations>false</canTargetLocations>
@@ -380,7 +380,7 @@
 	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 	<!-- </durationTimeStatFactors> -->
 	<chance>0</chance>
-	<range>14.9</range>
+	<range>19.9</range>
 	<targetMode>Thing</targetMode>
 	<targetingParameters>
 		<canTargetLocations>false</canTargetLocations>
@@ -406,13 +406,13 @@
 			<li>VPE_BloodFlame_STNL</li>
 			</prerequisites>
 		</li>
-		<li Class="VPE_Veincaster.ConcentratedAssaultModExt">
-			<bloodFilthDef>
-				<li>Filth_Blood</li>
-				<li>Filth_BloodSmear</li>
-				<li>Filth_BloodInsect</li>
-			</bloodFilthDef>
-		</li>
+		<!-- <li Class="VPE_Veincaster.ConcentratedAssaultModExt"> -->
+			<!-- <bloodFilthDef> -->
+				<!-- <li>Filth_Blood</li> -->
+				<!-- <li>Filth_BloodSmear</li> -->
+				<!-- <li>Filth_BloodInsect</li> -->
+			<!-- </bloodFilthDef> -->
+		<!-- </li> -->
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
 
@@ -451,6 +451,8 @@
 		<li Class="VPE_Veincaster.AbilityForceCondiExt">
 			<conditionDef>VPE_Veincaster_BloodStorm_STNL</conditionDef>
 			<global>false</global>
+			<scaleDuraWithSensi>True</scaleDuraWithSensi>
+			<aiCanUse>True</aiCanUse>
 		</li>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
 			<path>VPE_Veincaster_STNL</path>
@@ -518,7 +520,7 @@
 	<castSound>MechSerumUsed</castSound>
 	<castTime>30</castTime>
 	<chance>0</chance>
-	<range>14.9</range>
+	<range>99999</range>
 	<targetMode>Thing</targetMode>
 	<targetingParameters>
 		<canTargetLocations>false</canTargetLocations>
@@ -538,7 +540,7 @@
 			<path>VPE_Veincaster_STNL</path>
 			<level>6</level>
 			<order>1</order>
-			<psyfocusCost>0.70</psyfocusCost>
+			<psyfocusCost>0.40</psyfocusCost>
 			<entropyGain>200</entropyGain>
 			<prerequisites>
 			<li>VPE_BloodStream_STNL</li>

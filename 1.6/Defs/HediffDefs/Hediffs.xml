@@ -60,7 +60,7 @@
 <HediffDef>
 	<defName>VPE_Bloodlink_Donor_STNL</defName>
 	<label>Blood-Link</label>
-	<description>This person is linked to another creature, they will have their blood drained in order to keep the receiver alive.</description>
+	<description>This person is linked to another creature, their blood will be drained to keep the receiver alive should they start bleeding.</description>
 	<hediffClass>VPE_Veincaster.Hediff_Bloodlink_Donor</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
