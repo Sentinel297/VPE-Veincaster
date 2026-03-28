@@ -406,13 +406,6 @@
 			<li>VPE_BloodFlame_STNL</li>
 			</prerequisites>
 		</li>
-		<!-- <li Class="VPE_Veincaster.ConcentratedAssaultModExt"> -->
-			<!-- <bloodFilthDef> -->
-				<!-- <li>Filth_Blood</li> -->
-				<!-- <li>Filth_BloodSmear</li> -->
-				<!-- <li>Filth_BloodInsect</li> -->
-			<!-- </bloodFilthDef> -->
-		<!-- </li> -->
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
 
