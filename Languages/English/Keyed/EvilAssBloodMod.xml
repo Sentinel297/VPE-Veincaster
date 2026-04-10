@@ -48,6 +48,7 @@
 
 <!-- Misc -->
 <VPE_Veincaster_NotAPawn_STNL>This target isn't a creature.</VPE_Veincaster_NotAPawn_STNL>
+<VPE_Veincaster_CellMustHaveBlood_STNL>Target cell must contain blood.</VPE_Veincaster_CellMustHaveBlood_STNL>
 <VPE_Veincaster_NotACorpse_STNL>Must target a corpse.</VPE_Veincaster_NotACorpse_STNL>
 <VPE_Veincaster_DestroyParent_STNL>Destroy {0}.</VPE_Veincaster_DestroyParent_STNL>
 

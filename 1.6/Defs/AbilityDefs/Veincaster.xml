@@ -364,6 +364,45 @@
 </VEF.Abilities.AbilityDef>
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Veincaster_BloodSkip_STNL</defName>
+	<label>Bloodskip</label>
+	<description>Vanish into a thick mist of blood and instantly emerge from the target bloodstain, regardless of the distance between the caster and the location.</description>
+	<iconPath>UI_Veincaster_STNL/Abilities/Bloodskip</iconPath>
+	<abilityClass>VPE_Veincaster.Ability_Bloodskip</abilityClass>
+	<castSound>PsycastPsychicEffect</castSound>
+	<castTime>30</castTime>
+	<chance>0</chance>
+	<requireLineOfSight>false</requireLineOfSight>
+	<range>999999</range>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_Veincaster_STNL</path>
+			<level>4</level>
+			<order>2</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>25</entropyGain>
+			<prerequisites>
+			<li>VPE_BloodConversion_STNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_ConcentratedAssault_STNL</defName>
 	<label>Concentrated Assault</label>
 	<description>Concentrate blood from nearby splatters and fallen enemies to strike a single target. \n\nEach blood splatter will summon blood bolts while corpses who aren't out of blood will summon heavy blood bolts.</description>
