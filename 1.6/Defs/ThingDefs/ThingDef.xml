@@ -2,7 +2,7 @@
 
   <ThingDef>
     <defName>VPE_BloodFlameThing_STNL</defName>
-    <label>Blood Fire</label>
+    <label>Blood fire</label>
     <thingClass>VPE_Veincaster.BloodFire</thingClass>
     <category>Attachment</category>
     <tickerType>Normal</tickerType>
@@ -26,7 +26,7 @@
 
 <ThingDef ParentName="EtherealThingBase">
 	<defName>VPE_Veincaster_BloodlightPinhole_STNL</defName>
-	<label>Bloodlight Pinhole</label>
+	<label>Bloodlight pinhole</label>
 	<thingClass>VPE_Veincaster.BloodlightPinhole</thingClass>
 	<tickerType>Normal</tickerType>
 	<drawerType>RealtimeOnly</drawerType>

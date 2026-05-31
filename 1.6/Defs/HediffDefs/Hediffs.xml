@@ -1,7 +1,5 @@
 <Defs>
 
-
-
 <HediffDef>
 	<defName>VPE_BloodStabilize_STNL</defName>
 	<label>Stabilized</label>
@@ -35,7 +33,7 @@
 
 <HediffDef>
 	<defName>VPE_Bloodlink_Receiver_STNL</defName>
-	<label>Blood-Link</label>
+	<label>Blood-link</label>
 	<description>This person is linked to another creature, they will draw blood from this creature should they start bleeding.</description>
 	<hediffClass>VPE_Veincaster.Hediff_Bloodlink_Receiver</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -59,7 +57,7 @@
 
 <HediffDef>
 	<defName>VPE_Bloodlink_Donor_STNL</defName>
-	<label>Blood-Link</label>
+	<label>Blood-link</label>
 	<description>This person is linked to another creature, their blood will be drained to keep the receiver alive should they start bleeding.</description>
 	<hediffClass>VPE_Veincaster.Hediff_Bloodlink_Donor</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -83,7 +81,7 @@
 
 <HediffDef>
 	<defName>VPE_Bloodstream_Debuff_STNL</defName>
-	<label>Blood Stream</label>
+	<label>Blood stream</label>
 	<description>A psychically induced blood rain is causing this creature to bleed out faster.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -114,7 +112,7 @@
 
 <HediffDef>
 	<defName>VPE_BloodConvergence_Passive_STNL</defName>
-	<label>Blood Convergence</label>
+	<label>Blood convergence</label>
 	<description>This Veincaster possesses the ability to absorb nearby blood. Doing so will restore their own blood supplies or refill the linked pawn's blood if the former isn't bleeding.</description>
 	<hediffClass>VPE_Veincaster.Hediff_BloodConvergence</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -156,7 +154,7 @@
 
 <HediffDef>
 	<defName>VPE_LifeDrain_Passive_STNL</defName>
-	<label>Life-Drain</label>
+	<label>Life-drain</label>
 	<description>This Veincaster will reduce the severity of their wounds upon harming organic creatures.</description>
 	<hediffClass>VPE_Veincaster.Hediff_LifeDrain</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -186,7 +184,7 @@
 
 <HediffDef>
 	<defName>VPE_LifeHunt_STNL</defName>
-	<label>Life-Hunt</label>
+	<label>Life-hunt</label>
 	<description>This creature's health is being drained by a Veincaster.</description>
 	<hediffClass>VPE_Veincaster.Hediff_LifeHunt</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -216,7 +214,7 @@
 
 <HediffDef>
 	<defName>VPE_SecondWind_Passive_STNL</defName>
-	<label>Second Wind (Self)</label>
+	<label>Second wind (Self)</label>
 	<description>Upon death, this creature may resurrect itself once enough blood has been absorbed from nearby hemogenic things.</description>
 	<hediffClass>VPE_Veincaster.Hediff_SecondWind</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -247,7 +245,7 @@
 
 <HediffDef>
 	<defName>VPE_BloodSurfaceHiddenHediff_STNL</defName>
-	<label>Blood Surface Control Hediff</label>
+	<label>Blood surface control hediff</label>
 	<description>Hidden hediff to remove blood surfaces upon death.</description>
 	<hediffClass>VPE_Veincaster.Hediff_HediffBloodSurfaceController</hediffClass>
 	<initialSeverity>1</initialSeverity>

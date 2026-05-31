@@ -4,7 +4,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_BloodLink_STNL</defName>
-	<label>Blood-Link</label>
+	<label>Blood-link</label>
 	<description>Links the caster to another creature capable of bleeding. Upon blood loss, the user will draw blood from the connected creature to keep themselves alive.\n\nThis ability will not draw blood from the connected creature if the severity of its blood loss exceeds the safety threshold.\n\nOnly one creature may be linked to at all times.\n\nLinking to another creature will sever the previous link.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/Bloodlink</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_BloodLink</abilityClass>
@@ -94,16 +94,17 @@
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
 
-<VEF.Abilities.AbilityDef ParentName="VPE_PsycastGoToTargetBase">
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_BloodlightPinhole_STNL</defName>
-	<label>Bloodlight Pinhole</label>
+	<label>Bloodlight pinhole</label>
 	<description>Weave a twisted solar-pinhole which will cause nearby pawns with the bloodlust trait to gain a mood bonus for a day.\n\nBiotech Compatibility:\nHemogenic creatures will obtain this same mood bonus.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/BloodlightPinhole</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_SpawnThingDef</abilityClass>
 	<castSound>PsycastPsychicPulse</castSound>
 	<castTime>30</castTime>
 	<chance>0</chance>
-	<range>14.9</range>
+	<range>40.9</range>
+	<radius>8.9</radius>
 	<targetMode>Location</targetMode>
 	<targetingParameters>
 		<canTargetLocations>true</canTargetLocations>
@@ -115,8 +116,7 @@
 		<!-- <canTargetItems>true</canTargetItems> -->
 		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
 	</targetingParameters>
-		<showUndrafted>True</showUndrafted>
-	<radius>0</radius>
+	<showUndrafted>True</showUndrafted>
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<modExtensions>
@@ -127,25 +127,25 @@
 			<psyfocusCost>0.10</psyfocusCost>
 			<entropyGain>0</entropyGain>
 			<prerequisites>
-			<li>VPE_BloodLink_STNL</li>
+				<li>VPE_BloodLink_STNL</li>
 			</prerequisites>
 		</li>
 		<li Class="VPE_Veincaster.SpawnThingAbilityDef">
-		<thingDef>VPE_Veincaster_BloodlightPinhole_STNL</thingDef>
+			<thingDef>VPE_Veincaster_BloodlightPinhole_STNL</thingDef>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_BloodBolt_STNL</defName>
-	<label>Blood Bolt</label>
+	<label>Blood bolt</label>
 	<description>Form a multitude of blood bolts made out of the caster's blood and shoot them at the target to deal multiple instances of minor sharp damage.\n\nThe amount of bolts is determined by the psychic sensitivity of the user.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/BloodBolt</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_BloodBolt</abilityClass>
 	<castSound>PsycastPsychicPulse</castSound>
 	<castTime>30</castTime>
 	<!-- <chance>0</chance> -->
-	<range>19.9</range>
+	<range>29.9</range>
 	<targetMode>Thing</targetMode>
 	<targetingParameters>
 		<canTargetLocations>false</canTargetLocations>
@@ -238,7 +238,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastGoToTargetBase">
 	<defName>VPE_BloodConversion_STNL</defName>
-	<label>Blood Conversion</label>
+	<label>Blood conversion</label>
 	<description>Sacrifice the caster's own blood and offer it to the nearest archotech engine, which will cause it to bestow additonal psyfocus to the user's psylink.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/Conversion</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_BloodConversion</abilityClass>
@@ -277,14 +277,14 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_BloodFlame_STNL</defName>
-	<label>Blood Flame</label>
+	<label>Blood flame</label>
 	<description>Alters the composition of the target's blood, resulting in a blood-like mystical fire which will exsanguinate the target by using its blood as fuel.\n\nDuration scales with psychic sensitivity.\n\nEvolutive Skill:\n\nEvolution Requirement: Caster reaches 500% psychic sensitivity.\n\nEvolution Effect: Upon death, victims of this ability will spread their flames to nearby hostile creatures who are capable of bleeding.\n\nConcentration Skill: Dying while this skill is active will end it prematurely.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/BloodFlame</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_BloodFlame</abilityClass>
 	<castSound>VPE_Flameball_Cast</castSound>
 	<castTime>30</castTime>
 	<!-- <chance>0</chance> -->
-	<range>14.9</range>
+	<range>24.9</range>
 	<targetMode>Pawn</targetMode>
 	<targetingParameters>
 		<canTargetLocations>false</canTargetLocations>
@@ -317,10 +317,10 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_BloodConvergence_STNL</defName>
-	<label>Passive: Blood Convergence</label>
+	<label>Passive: Blood convergence</label>
 	<description>Passive Skill: Unlocking this skill will automatically grant its effects:\n\nAllows this Veincaster to absorb blood from nearby splatters or corpses to counteract blood loss.\n\nBlood-link Synergy:\n\nWill refill the linked creature's blood if the Veincaster isn't bleeding.\n\nOnce unlocked, this passive may be toggled on/off at will.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/BloodConvergence</iconPath>
-	<abilityClass>VPE_Veincaster.Ability_PassiveGiver</abilityClass>
+	<abilityClass>SentinelFramework_STNL.Ability_PassiveGiver</abilityClass>
 	<castSound>PsycastPsychicPulse</castSound>
 	<castTime>30</castTime>
 	<!-- <durationTime>2500</durationTime> -->
@@ -355,7 +355,7 @@
 			<li>VPE_BloodTransfusion_STNL</li>
 			</prerequisites>
 		</li>
-		<li Class="VPE_Veincaster.Ability_PassiveModExt">
+		<li Class="SentinelFramework_STNL.Ability_PassiveModExt">
 		<hediffsToAdd>
 		<li>VPE_BloodConvergence_Passive_STNL</li>
 		</hediffsToAdd>
@@ -404,7 +404,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_ConcentratedAssault_STNL</defName>
-	<label>Concentrated Assault</label>
+	<label>Concentrated assault</label>
 	<description>Concentrate blood from nearby splatters and fallen enemies to strike a single target. \n\nEach blood splatter will summon blood bolts while corpses who aren't out of blood will summon heavy blood bolts.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/ConcentratedAssault</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_ConcentratedAssault</abilityClass>
@@ -414,12 +414,8 @@
 		<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 	<!-- </durationTimeStatFactors> -->
 	<castTime>90</castTime>
-	<!-- <durationTime>2500</durationTime> -->
-	<!-- <durationTimeStatFactors> -->
-	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
-	<!-- </durationTimeStatFactors> -->
 	<chance>0</chance>
-	<range>19.9</range>
+	<range>29.9</range>
 	<targetMode>Thing</targetMode>
 	<targetingParameters>
 		<canTargetLocations>false</canTargetLocations>
@@ -452,10 +448,10 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastGoToTargetBase">
 	<defName>VPE_BloodStream_STNL</defName>
-	<label>Blood Stream</label>
+	<label>Blood stream</label>
 	<description>Sacrifice the caster's own blood to unleash a blood storm in the area. This storm will periodically reduce blood loss in allied creatures while causing enemy creatures to bleed out faster.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/BloodStream</iconPath>
-	<abilityClass>VPE_Veincaster.Ability_ForceCondition</abilityClass>
+	<abilityClass>VPE_Veincaster.Ability_Bloodstream</abilityClass>
 	<castSound>Psycast_Neuroquake_Effect</castSound>
 	<castTime>30</castTime>
 	<durationTime>30000</durationTime>
@@ -475,12 +471,12 @@
 	<!-- <canTargetItems>true</canTargetItems> -->
 	<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
 	<!-- </targetingParameters> -->
-		<showUndrafted>True</showUndrafted>
+	<showUndrafted>True</showUndrafted>
 	<radius>0</radius>
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<modExtensions>
-		<li Class="VPE_Veincaster.AbilityForceCondiExt">
+		<li Class="SentinelFramework_STNL.AbilityForceCondiExt">
 			<conditionDef>VPE_Veincaster_BloodStorm_STNL</conditionDef>
 			<global>false</global>
 			<scaleDuraWithSensi>True</scaleDuraWithSensi>
@@ -493,7 +489,7 @@
 			<psyfocusCost>0.20</psyfocusCost>
 			<entropyGain>125</entropyGain>
 			<prerequisites>
-			<li>VPE_BloodConvergence_STNL</li>
+				<li>VPE_BloodConvergence_STNL</li>
 			</prerequisites>
 		</li>
 	</modExtensions>
@@ -501,7 +497,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_BloodSurface_STNL</defName>
-	<label>Blood Surface</label>
+	<label>Blood surface</label>
 	<description>Consume the user's own blood to coat the ground with an omnious crimson fluid. Which will deal sharp damage to factionless and hostile creatures who linger in the affected area.\n\nDuration, damage and radius scale with psychic sensitivity.\n\nConcentration Skill: Dying while this skill is active will end it prematurely.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/BloodSurface</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_BloodSurface</abilityClass>
@@ -512,7 +508,7 @@
 	<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 	<!-- </durationTimeStatFactors> -->
 	<!-- <chance>0</chance> -->
-	<range>14.9</range>
+	<range>18.9</range>
 	<targetMode>Location</targetMode>
 	<targetingParameters>
 		<canTargetLocations>true</canTargetLocations>
@@ -545,7 +541,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastGoToTargetBase">
 	<defName>VPE_BloodSecondWind_STNL</defName>
-	<label>Second Wind</label>
+	<label>Second wind</label>
 	<description>Consume this Veincaster's blood to reform and infuse life into the body of the deceased target creature, allowing it to return from the dead after a coma.\n\nShould they meet their demise, this Veincaster may resurrect themselves with this ability, a large concentration of blood is required to begin the resurrection process.\n\nBlood may be resupplied via an active blood-link or by absorbing blood from adjacent items, corpses or creatures.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/SecondWind</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_SecondWind</abilityClass>
@@ -583,10 +579,10 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_LifeDrain_STNL</defName>
-	<label>Passive: Life-Drain</label>
-	<description>Passive Skill: Unlocking this skill will automatically grant its effects:\n\nAllows this Veincaster to reduce the severity of their wounds upon harming organic creatures, the healing effectiveness depends on the damage dealt.\n\nHealing Restrictions: Life-Drain cannot restore missing limbs.\n\nEvolutive Passive:\n\nEvolution Requirement: Veincaster lands the killing blow on 50 organic creatures.\n\nEvolution Effect: Life-Drain will inflict "Life-Hunt" on enemy/factionless creatures. Life-Hunt causes cutting damage over time while reducing the severity of the Veincaster's wounds. Once unlocked, Life-Hunt may be toggled at will.</description>
+	<label>Passive: Life-drain</label>
+	<description>Passive Skill: Unlocking this skill will automatically grant its effects:\n\nAllows this Veincaster to reduce the severity of their wounds upon harming organic creatures, the healing effectiveness depends on the damage dealt.\n\nHealing Restrictions: Life-drain cannot restore missing limbs.\n\nEvolutive Passive:\n\nEvolution Requirement: Veincaster lands the killing blow on 50 organic creatures.\n\nEvolution Effect: Life-drain will inflict "Life-hunt" on enemy/factionless creatures. Life-hunt causes cutting damage over time while reducing the severity of the Veincaster's wounds. Once unlocked, Life-hunt may be toggled at will.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/LifeDrain</iconPath>
-	<abilityClass>VPE_Veincaster.Ability_PassiveGiver</abilityClass>
+	<abilityClass>SentinelFramework_STNL.Ability_PassiveGiver</abilityClass>
 	<castSound>PsycastPsychicPulse</castSound>
 	<castTime>30</castTime>
 	<!-- <durationTime>2500</durationTime> -->
@@ -621,7 +617,7 @@
 			<li>VPE_BloodSurface_STNL</li>
 			</prerequisites>
 		</li>
-		<li Class="VPE_Veincaster.Ability_PassiveModExt">
+		<li Class="SentinelFramework_STNL.Ability_PassiveModExt">
 		<hediffsToAdd>
 		<li>VPE_LifeDrain_Passive_STNL</li>
 		</hediffsToAdd>

@@ -4,7 +4,7 @@
   <GameConditionDef>
 	<defName>VPE_Veincaster_BloodStorm_STNL</defName>
 	<conditionClass>VPE_Veincaster.BloodTyphoon</conditionClass>
-	<label>Blood Stream</label>
+	<label>Blood stream</label>
 	<description>A stream of blood is falling from the sky, causing allies to regenerate blood at a faster rate.\n\nHostile creatures affected by this condition will bleed out twice as fast.</description>
 	<letterDef>NegativeEvent</letterDef>
 	<weatherDef>VPE_Veincaster_BloodStorm_STNL</weatherDef>
@@ -13,7 +13,7 @@
   
 <WeatherDef>
 	<defName>VPE_Veincaster_BloodStorm_STNL</defName>
-	<label>Blood Stream</label>
+	<label>Blood stream</label>
 	<description>A Veincaster has caused a mysterious stream of blood to pour down onto the area.</description>
 	<temperatureRange>-1000~9999</temperatureRange>
 	<snowRate>0</snowRate>

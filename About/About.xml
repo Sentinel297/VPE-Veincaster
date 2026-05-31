@@ -5,22 +5,27 @@
 		<li>1.6</li>
 	</supportedVersions>
 	<modVersion>1.0</modVersion>
-<modDependencies>
-	<li>
-		<packageId>Ludeon.RimWorld.Royalty</packageId>
-		<displayName>Royalty</displayName>
-	</li>
-	<!-- <li> -->
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+		<!-- <li> -->
 		<!-- <packageId>brrainz.harmony</packageId> -->
 		<!-- <displayName>Harmony</displayName> -->
 		<!-- <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl> -->
-	<!-- </li> -->
-	<li>
-		<packageId>VanillaExpanded.VPsycastsE</packageId>
-		<displayName>Vanilla Psycasts Expanded</displayName>
-		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659</steamWorkshopUrl>
-	</li>
-</modDependencies>
+		<!-- </li> -->
+		<li>
+			<packageId>VPE.Framework.Sentinel</packageId>
+			<displayName>VPE - Sentinel Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3724841120</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>VanillaExpanded.VPsycastsE</packageId>
+			<displayName>Vanilla Psycasts Expanded</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659</steamWorkshopUrl>
+		</li>
+	</modDependencies>
 	<packageId>VPE.Veincaster.Sentinel</packageId>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
@@ -32,6 +37,7 @@
 		<li>brrainz.harmony</li>
 		<li>VanillaExpanded.VPsycastsE</li>
 		<li>vanillaexpanded.achievements</li>
+		<li>VPE.Framework.Sentinel</li>
 	</loadAfter>
 	<description>
 </description>
