@@ -97,7 +97,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_BloodlightPinhole_STNL</defName>
 	<label>Bloodlight pinhole</label>
-	<description>Weave a twisted solar-pinhole which will cause nearby pawns with the bloodlust trait to gain a mood bonus for a day.\n\nBiotech Compatibility:\nHemogenic creatures will obtain this same mood bonus.</description>
+	<description>Weave a twisted solar-pinhole which will cause nearby pawns with the bloodlust trait to gain a mood bonus for a day.\n\nBiotech Compatibility:\nHemogenic creatures will obtain the same mood bonus.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/BloodlightPinhole</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_SpawnThingDef</abilityClass>
 	<castSound>PsycastPsychicPulse</castSound>
@@ -116,7 +116,7 @@
 		<!-- <canTargetItems>true</canTargetItems> -->
 		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
 	</targetingParameters>
-	<showUndrafted>True</showUndrafted>
+	<showUndrafted>false</showUndrafted>
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<modExtensions>

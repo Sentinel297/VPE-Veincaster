@@ -21,6 +21,7 @@
 
 <!-- Blood Surface -->
 <VPE_Veincaster_BloodSurface_Info_STNL>Duration: {0}s\nDamage: {1} Cutting</VPE_Veincaster_BloodSurface_Info_STNL>
+<VPE_Veincaster_BloodSurface_DeleteAll_STNL>Remove all surfaces</VPE_Veincaster_BloodSurface_DeleteAll_STNL>
 
 <!-- Life Hunt -->
 <VPE_Veincaster_LifeHunt_ToggleOn_STNL>Enable Life-Hunt</VPE_Veincaster_LifeHunt_ToggleOn_STNL>
