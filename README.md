@@ -108,6 +108,13 @@ Annihilate the target creature from within by accelerating its own blood flow un
 
 <h1>Disclaimer: While Anomaly isn't a dependency some of its VFX are used in this mod, meaning that some abilities won't look as intended without it.</h1>
 
+<hr></hr>
+
+<h1>Credits</h1>
+Sentinel: Ability icons/Code
+
+Morton: Psycast tree card
+
 <h1>F.A.Q</h1>
 
 Q: Safe to add mid-save? 
