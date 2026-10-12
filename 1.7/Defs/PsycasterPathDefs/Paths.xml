@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VanillaPsycastsExpanded.PsycasterPathDef>
+		<defName>VPE_Veincaster_STNL</defName>
+		<label>Veincaster</label>
+		<description>Veincasters draw power from blood, which could either be their own or sourced from the unfortunate victim they tied themselves to.\n\nThey originate from sanguophage psycasters who lent their power to close allies, allowing them to weave blood in many ways without requiring to become a sanguophage.\n\nSome Veincaster clans use their gift to preserve allies, while others use it to inflict pain on enemies.</description>
+		<background>UI_Veincaster_STNL/Tree/VeinTreeBase</background>
+		<altBackground>UI_Veincaster_STNL/Tree/VeinTreeBase</altBackground>
+		<tab>Misc</tab>
+		<tooltip>Veincasters draw power from blood, which could either be their own or sourced from the unfortunate victim they tied themselves to.\n\nThey originate from sanguophage psycasters who lent their power to close allies, allowing them to weave blood in many ways without requiring to become a sanguophage.\n\nSome Veincaster clans use their gift to preserve allies, while others use it to inflict pain on enemies.</tooltip>
+	</VanillaPsycastsExpanded.PsycasterPathDef>
+</Defs>
