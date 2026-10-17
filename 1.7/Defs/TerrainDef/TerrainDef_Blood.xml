@@ -52,7 +52,7 @@
     <pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>
     <waterDepthShader>Map/WaterDepth</waterDepthShader>
     <renderPrecedence>394</renderPrecedence>
-	<color>(255,140,140)</color>
+	<color>(255,70,70)</color>
     <!-- <driesTo>Gravel</driesTo> -->
     <tags>
       <!-- <li>WaterFreshShallow</li> -->

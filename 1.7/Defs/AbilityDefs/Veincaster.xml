@@ -166,7 +166,7 @@
 			<level>2</level>
 			<order>3</order>
 			<psyfocusCost>0.03</psyfocusCost>
-			<entropyGain>15</entropyGain>
+			<entropyGain>20</entropyGain>
 			<prerequisites>
 			<li>VPE_BloodLink_STNL</li>
 			</prerequisites>
@@ -405,7 +405,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_ConcentratedAssault_STNL</defName>
 	<label>Concentrated assault</label>
-	<description>Concentrate blood from nearby splatters and fallen enemies to strike a single target. \n\nEach blood splatter will summon blood bolts while corpses who aren't out of blood will summon heavy blood bolts.</description>
+	<description>Concentrate blood from nearby splatters and fallen enemies to strike a single target. \n\nEach blood splatter will summon blood bolts while corpses that still contain blood will summon heavy blood bolts.</description>
 	<iconPath>UI_Veincaster_STNL/Abilities/ConcentratedAssault</iconPath>
 	<abilityClass>VPE_Veincaster.Ability_ConcentratedAssault</abilityClass>
 	<castSound>PsycastPsychicEffect</castSound>
